@@ -51,7 +51,7 @@ case0.addEventListener('click', () => {
     }
     if (compteur == 9) {
         console.log ("match nul")
-        return
+        
     }
 })
 case1.addEventListener('click', () => {
@@ -61,7 +61,7 @@ case1.addEventListener('click', () => {
     }
     if (compteur == 9) {
         console.log ("match nul")
-        return
+        
     }
 })
 case2.addEventListener('click', () => {
@@ -71,7 +71,7 @@ case2.addEventListener('click', () => {
     }
     if (compteur == 9) {
         console.log ("match nul")
-        return
+        
     }
 })
 case3.addEventListener('click', () => {
@@ -81,7 +81,7 @@ case3.addEventListener('click', () => {
     }
     if (compteur == 9) {
         console.log ("match nul")
-        return
+        
     }
 })
 case4.addEventListener('click', () => {
@@ -91,7 +91,7 @@ case4.addEventListener('click', () => {
     }
     if (compteur == 9) {
         console.log ("match nul")
-        return
+        
     }
 })
 case5.addEventListener('click', () => {
@@ -101,7 +101,7 @@ case5.addEventListener('click', () => {
     }
     if (compteur == 9) {
         console.log ("match nul")
-        return
+        
     }
 })
 case6.addEventListener('click', () => {
@@ -111,7 +111,7 @@ case6.addEventListener('click', () => {
     }
     if (compteur == 9) {
         console.log ("match nul")
-        return
+        
     }
 })
 case7.addEventListener('click', () => {
@@ -121,7 +121,7 @@ case7.addEventListener('click', () => {
     }
     if (compteur == 9) {
         console.log ("match nul")
-        return
+        
     }
 })
 case8.addEventListener('click', () => {
@@ -131,7 +131,7 @@ case8.addEventListener('click', () => {
     }
     if (compteur == 9) {
         console.log ("match nul")
-        return
+        
     }
 })
 
