@@ -1,0 +1,201 @@
+body {
+    background-color: bisque;
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#plateau {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 1em;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+#score {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.case0{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.case1{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.case2{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.case3{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.case4{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.case5{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.case6 {
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.case7{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.case8{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.case0:hover {
+    background-color: #e0e0e0;
+}
+.case1:hover {
+    background-color: #e0e0e0;
+}
+.case2:hover {
+    background-color: #e0e0e0;
+}
+.case3:hover {
+    background-color: #e0e0e0;
+}
+.case4:hover {
+    background-color: #e0e0e0;
+}
+.case5:hover {
+    background-color: #e0e0e0;
+}
+.case6:hover {
+    background-color: #e0e0e0;
+}
+.case7:hover {
+    background-color: #e0e0e0;
+}
+.case8:hover {
+    background-color: #e0e0e0;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.style {
+    width: 100px;
+    height: 100px;
+
+}
