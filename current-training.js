@@ -45,91 +45,91 @@ let turnPlayer = 0;
 let compteur = 0;
 
 case0.addEventListener('click', () => {
-    if (compteur < 9) {
+    if (compteur < 8) {
         compteur++
         return
     }
-    if (compteur == 9) {
+    if (compteur == 8) {
         console.log ("match nul")
         
     }
 })
 case1.addEventListener('click', () => {
-    if (compteur < 9) {
+    if (compteur < 8) {
         compteur++
         return
     }
-    if (compteur == 9) {
+    if (compteur == 8) {
         console.log ("match nul")
         
     }
 })
 case2.addEventListener('click', () => {
-    if (compteur < 9) {
+    if (compteur < 8) {
         compteur++
         return
     }
-    if (compteur == 9) {
+    if (compteur == 8) {
         console.log ("match nul")
         
     }
 })
 case3.addEventListener('click', () => {
-    if (compteur < 9) {
+    if (compteur < 8) {
         compteur++
         return
     }
-    if (compteur == 9) {
+    if (compteur == 8) {
         console.log ("match nul")
         
     }
 })
 case4.addEventListener('click', () => {
-    if (compteur < 9) {
+    if (compteur < 8) {
         compteur++
         return
     }
-    if (compteur == 9) {
+    if (compteur == 8) {
         console.log ("match nul")
         
     }
 })
 case5.addEventListener('click', () => {
-    if (compteur < 9) {
+    if (compteur < 8) {
         compteur++
         return
     }
-    if (compteur == 9) {
+    if (compteur == 8) {
         console.log ("match nul")
         
     }
 })
 case6.addEventListener('click', () => {
-    if (compteur < 9) {
+    if (compteur < 8) {
         compteur++
         return
     }
-    if (compteur == 9) {
+    if (compteur == 8) {
         console.log ("match nul")
         
     }
 })
 case7.addEventListener('click', () => {
-    if (compteur < 9) {
+    if (compteur < 8) {
         compteur++
         return
     }
-    if (compteur == 9) {
+    if (compteur == 8) {
         console.log ("match nul")
         
     }
 })
 case8.addEventListener('click', () => {
-    if (compteur < 9) {
+    if (compteur < 8) {
         compteur++
         return
     }
-    if (compteur == 9) {
+    if (compteur == 8) {
         console.log ("match nul")
         
     }
@@ -194,10 +194,9 @@ case2.addEventListener('click', () => {
         turnPlayer = 0     
     }
     
-        if (case0.style.backgroundImage && case1.style.backgroundImage && case2.style.backgroundImage == 'url("images/x.png")'){
-        console.log("c'est gagne");
+        if (case0.style.backgroundImage && case1.style.backgroundImage && case2.style.backgroundImage == 'url("images/x.png")')
         
-    }
+    
 
     verifVictoire()
 })
@@ -401,4 +400,16 @@ function compteurVictoire() {
     spanO.textContent = scoreO;
         
 }
+/*reinitialiser le jeu*/
+let reset = document.querySelector('Reinitialiser')
 
+if (reset.addEventListener('click', () => {
+    ( let reset = document.getElementById("Reinitialiser");{
+        let turn player = 0 ;
+        let compteur = 0 ;
+        let scoreX = 0 ;
+        let scoreO = 0 ;
+        let spanX = 0 ;
+        let spanO = 0 ;
+    })
+}))
