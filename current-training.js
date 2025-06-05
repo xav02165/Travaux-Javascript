@@ -91,7 +91,6 @@ case4.addEventListener('click', () => {
     }
     if (compteur == 8) {
         console.log ("match nul")
-        
     }
 })
 case5.addEventListener('click', () => {
@@ -135,15 +134,10 @@ case8.addEventListener('click', () => {
     }
 })
 
-
-
-
 case0.addEventListener('click', () => {
-
     if (case0.style.backgroundImage !== ""){
         return
     }
-
     if (turnPlayer == 0){
         case0.style.backgroundImage = "url('images/x.png')";
         turnPlayer = 1
@@ -152,10 +146,7 @@ case0.addEventListener('click', () => {
         case0.style.backgroundImage = "url('images/o.png')";
         turnPlayer = 0     
     }
-
-verifVictoire()
-
-
+    verifVictoire()
 })
 case1.addEventListener('click', () => {
     if (case1.style.backgroundImage !== ""){
@@ -169,18 +160,9 @@ case1.addEventListener('click', () => {
         case1.style.backgroundImage = "url('images/o.png')";
         turnPlayer = 0     
     }
-    
-    if (case0.style.backgroundImage && case1.style.backgroundImage && case2.style.backgroundImage == 'url("images/x.png")'){
-        console.log("c'est gagne");
-    }
-
-
-verifVictoire()
-
-
-
-
+    verifVictoire()
 })
+
 case2.addEventListener('click', () => {
     if (case2.style.backgroundImage !== ""){
         return
@@ -193,11 +175,6 @@ case2.addEventListener('click', () => {
         case2.style.backgroundImage = "url('images/o.png')";
         turnPlayer = 0     
     }
-    
-        if (case0.style.backgroundImage && case1.style.backgroundImage && case2.style.backgroundImage == 'url("images/x.png")')
-        
-    
-
     verifVictoire()
 })
 case3.addEventListener('click', () => {
@@ -389,27 +366,55 @@ function verifVictoire(){
 /*compteur de victoire*/
 let scoreX = 0;
 let scoreO = 0;
+let spanX;
+let spanO;
 
 function compteurVictoire() {
     
-    let spanX = document.getElementById("scoreX");
+    spanX = document.getElementById("scoreX");
     spanX.textContent = scoreX;
     
         
-    let spanO = document.getElementById("scoreO");
+    spanO = document.getElementById("scoreO");
     spanO.textContent = scoreO;
-        
+    
 }
 /*reinitialiser le jeu*/
-let reset = document.querySelector('Reinitialiser')
 
-if (reset.addEventListener('click', () => {
-    ( let reset = document.getElementById("Reinitialiser");{
-        let turn player = 0 ;
-        let compteur = 0 ;
-        let scoreX = 0 ;
-        let scoreO = 0 ;
-        let spanX = 0 ;
-        let spanO = 0 ;
-    })
-}))
+
+function reset() {
+    turnPlayer = 0 ;
+    compteur = 0 ;
+    scoreX = 0 ;
+        scoreO = 0 ;
+        spanX = 0 ;
+        spanO = 0 ;
+        spanO = document.getElementById("scoreO");
+        spanX = document.getElementById("scoreX");
+        spanX.textContent = scoreX;
+        spanO.textContent = scoreO;
+        case0.style.backgroundImage="";
+         case1.style.backgroundImage="";
+          case2.style.backgroundImage="";
+           case3.style.backgroundImage="";
+           case4.style.backgroundImage="";
+         case5.style.backgroundImage="";
+          case6.style.backgroundImage="";
+           case7.style.backgroundImage="";
+           case8.style.backgroundImage="";
+    }
+
+/*bouton rejouer*/
+function rejouer() {
+    turnPlayer = 0 ;
+    compteur = 0 ;
+    case0.style.backgroundImage="";
+    case1.style.backgroundImage="";
+    case2.style.backgroundImage="";
+    case3.style.backgroundImage="";
+    case4.style.backgroundImage="";
+    case5.style.backgroundImage="";
+    case6.style.backgroundImage="";
+    case7.style.backgroundImage="";
+    case8.style.backgroundImage="";
+    }
