@@ -400,28 +400,26 @@ function compteurVictoire() {
     
 }
 /*reinitialiser le jeu*/
-
-
 function reset() {
     turnPlayer = 0 ;
     compteur = 0 ;
     scoreX = 0 ;
-        scoreO = 0 ;
-        spanX = 0 ;
-        spanO = 0 ;
-        spanO = document.getElementById("scoreO");
-        spanX = document.getElementById("scoreX");
-        spanX.textContent = scoreX;
-        spanO.textContent = scoreO;
-        case0.style.backgroundImage="";
-        case1.style.backgroundImage="";
-        case2.style.backgroundImage="";
-        case3.style.backgroundImage="";
-        case4.style.backgroundImage="";
-        case5.style.backgroundImage="";
-        case6.style.backgroundImage="";
-        case7.style.backgroundImage="";
-        case8.style.backgroundImage="";
+    scoreO = 0 ;
+    spanX = 0 ;
+    spanO = 0 ;
+    spanO = document.getElementById("scoreO");
+    spanX = document.getElementById("scoreX");
+    spanX.textContent = scoreX;
+    spanO.textContent = scoreO;
+    case0.style.backgroundImage="";
+    case1.style.backgroundImage="";
+    case2.style.backgroundImage="";
+    case3.style.backgroundImage="";
+    case4.style.backgroundImage="";
+    case5.style.backgroundImage="";
+    case6.style.backgroundImage="";
+    case7.style.backgroundImage="";
+     case8.style.backgroundImage="";
     }
 
 /*bouton rejouer*/
