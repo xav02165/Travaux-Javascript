@@ -1,36 +1,4 @@
-/*const cellule = document.querySelectorAll(."case");
 
-
-
-let Resultat = document.getElementById("");
-let scoreX = 0;
-let scoreO = 0;
-
-
-/* Fonction definit qui gagne celon le tableau 
-function Gagnant() {
-  for (let i = 0; i < victoire.length; i++) {
-    if (
-      document.getElementById(victoire[i][0]).innerHTML === symbole &&
-      document.getElementById(victoire[i][1]).innerHTML === symbole &&
-      document.getElementById(victoire[i][2]).innerHTML === symbole
-    ) {
-
-/* Affichage du gagnant selon les symboles  
-      if (symbole === 'X') {
-        Resultat.innerHTML = 'Le gagnant est le joueur 1';
-        
-      } else {
-        Resultat.innerHTML = 'Le gagnant est le joueur 2';
-        
-      }
-      /*pour arreter l'affichage des symboles
-
-      finJeu = true;
-    }
-  }
-  
-}*/
 const case0 = document.querySelector('.case0');
 const case1 = document.querySelector('.case1');
 const case2 = document.querySelector('.case2');
@@ -446,14 +414,14 @@ function reset() {
         spanX.textContent = scoreX;
         spanO.textContent = scoreO;
         case0.style.backgroundImage="";
-         case1.style.backgroundImage="";
-          case2.style.backgroundImage="";
-           case3.style.backgroundImage="";
-           case4.style.backgroundImage="";
-         case5.style.backgroundImage="";
-          case6.style.backgroundImage="";
-           case7.style.backgroundImage="";
-           case8.style.backgroundImage="";
+        case1.style.backgroundImage="";
+        case2.style.backgroundImage="";
+        case3.style.backgroundImage="";
+        case4.style.backgroundImage="";
+        case5.style.backgroundImage="";
+        case6.style.backgroundImage="";
+        case7.style.backgroundImage="";
+        case8.style.backgroundImage="";
     }
 
 /*bouton rejouer*/
@@ -471,8 +439,4 @@ function rejouer() {
     case8.style.backgroundImage="";
     }
 
-    /*bloquer le jeu apres victoire*/
-
-    function bloquer() {
-
-    }
+    
