@@ -205,7 +205,7 @@ for (let a=0; a=50; a+=5){
     }
 }*/
 
-let data = {
+/*let data = {
     "id": "0001",
     "type": "donut",
     "name": "Cake",
@@ -230,7 +230,7 @@ let data = {
             { "id": "5003", "type": "Chocolate" },
             { "id": "5004", "type": "Maple" }
         ]
-}
+}*/
 //console.log(data.name);
 //console.log(data.ppu);
 //console.log(data["topping"]);
@@ -246,3 +246,34 @@ let data = {
 //let a1=(data.topping[6].type);
 //let phrase2= "cake au "+a1;
 //console.log(phrase2);
+
+let jour = 5;
+let nomDuJour;
+
+switch (jour) {
+    case 1:
+        nomDuJour = "Lundi";
+        break;
+    case 2:
+        nomDuJour = "Mardi";
+        break;
+    case 3:
+        nomDuJour = "Mercredi";
+        break;
+    case 4:
+        nomDuJour = "Jeudi";
+        break;
+    case 5:
+        nomDuJour = "Vendredi";
+        break;
+    case 6:
+        nomDuJour = "Samedi";
+        break;
+    case 7:
+        nomDuJour = "Dimanche";
+        break;
+    default:
+        nomDuJour = "Jour invalide";
+}
+
+console.log("Aujourd'hui, c'est " + nomDuJour + ".");
