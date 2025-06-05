@@ -231,3 +231,18 @@ let data = {
             { "id": "5004", "type": "Maple" }
         ]
 }
+//console.log(data.name);
+//console.log(data.ppu);
+//console.log(data["topping"]);
+//console.log(data.batters.batter[3].type);
+//console.log(data.topping[6].type);
+//console.log(data.topping[0].id);
+
+//let chemin1=(data.batters.batter[0].id);
+//let nom=(data.batters.batter[0].type);
+//let phrase=nom+ " est l'id "+chemin1;
+//console.log(phrase);
+
+//let a1=(data.topping[6].type);
+//let phrase2= "cake au "+a1;
+//console.log(phrase2);
