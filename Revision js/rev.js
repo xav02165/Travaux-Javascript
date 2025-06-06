@@ -43,7 +43,7 @@ while (compteur<=100) {
 
    //nombre de 1 a 10
 
-let nombre = 7;
+/*let nombre = 7;
 let tentative = 0;
 
 while (tentative !== nombre) {
@@ -51,4 +51,6 @@ while (tentative !== nombre) {
 
     console.log("ce n'est pas le bon nombre" );
 }
-console.log("bravo, vous avez deviné le nombre!");
+console.log("bravo, vous avez deviné le nombre!");*/
+
+//OUI OU NON
