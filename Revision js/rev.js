@@ -1,19 +1,11 @@
 // nombre de 1 a 100
 
 let nombre = 7;
-const nombreChoisi = prompt ("choisir un nombre entre 1 et 100:");
+let tentative = 0;
 
-if (nombreChoisi < nombre ) {
-    console.log("trop bas!");
-}
-if (nombreChoisi > nombre ) {
-    console.log("trop haut");
-}
-if (nombreChoisi == nombre ) {
-    console.log("bravo, c'est trouvé");
-}
-while ( nombreChoisi != nombre){
-        prompt("choisir un nombre entre 1 et 100:");
+while (tentative !== nombre) {
+    tentative = parseInt(prompt("devinez un nombre entre 1 et 100 :"));
 
-
+    console.log("ce n'est pas le bon nombre" );
 }
+console.log("bravo, vous avez deviné le nombre!");
