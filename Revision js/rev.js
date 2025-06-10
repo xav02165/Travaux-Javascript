@@ -54,3 +54,82 @@ while (tentative !== nombre) {
 console.log("bravo, vous avez deviné le nombre!");*/
 
 //OUI OU NON
+
+/*let lundi = 1;
+let mardi = 2 ;
+let mercredi = 3 ;
+let jeudi = 4 ;
+let vendredi = 5 ;
+
+switch (lundi) {
+    case 1 : 
+    console.log ("spaghetti bologanaise");
+    break;
+    case 2 : 
+    console.log ("poulet roti");
+    break;
+    case 3 : 
+    console.log ("poisson pané");
+    break;
+    case 4 : 
+    console.log ("salade composée");
+    break;
+    case 5 : 
+    console.log ("pizza margherita");
+    break;
+    default:
+    console.log("non applicable");
+    break;
+}*/
+
+ let mois = parseInt (prompt ("quel est le numero du mois?")) ;
+
+
+switch (mois) {
+    
+    case 1:
+        console.log("janvier a 31 jours");
+        break;
+    case 2 : 
+    jours = (prompt ( "quel est le nombre de jours dans l'année")) ;
+        if ( jours % 2 === 0) {
+        console.log("Fevrier a 29 jours");
+    }
+        if (jours % 2 != 0) { 
+        console.log("Fevrier a 28 jours");
+    }
+        break;
+    case 3:
+        console.log("Mars a 31 jours");
+        break;
+    case 4:
+        console.log("Avril a 30 jours");
+        break;
+    case 5:
+        console.log("Mai a 31 jours");
+        break;
+    case 6:
+        console.log("juin a 30 jours");
+        break;
+    case 7:
+        console.log("juillet a 31 jours");
+        break;
+    case 8:
+        console.log("aout a 31 jours");
+        break;
+    case 9:
+        console.log("septembre a 30 jours");
+        break;
+    case 10:
+        console.log("octobre a 31 jours");
+        break;
+    case 11:
+        console.log("novembre a 30 jours");
+        break;
+    case 12:
+        console.log("decembre a 31 jours");
+        break;
+
+    default:
+        break;
+}
