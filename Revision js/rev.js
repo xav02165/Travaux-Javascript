@@ -82,6 +82,8 @@ switch (lundi) {
     break;
 }*/
 
+
+
  let mois = parseInt (prompt ("quel est le numero du mois?")) ;
 
 
@@ -91,11 +93,11 @@ switch (mois) {
         console.log("janvier a 31 jours");
         break;
     case 2 : 
-    jours = (prompt ( "quel est le nombre de jours dans l'année")) ;
-        if ( jours % 2 === 0) {
+    annee = (prompt ("en quel année somme nous")) ;
+        if  (annee % 4 === 0 && annee % 100 !== 0)  (annee % 400 === 0);{
         console.log("Fevrier a 29 jours");
     }
-        if (jours % 2 != 0) { 
+        if (annee % 4 != 0){
         console.log("Fevrier a 28 jours");
     }
         break;
