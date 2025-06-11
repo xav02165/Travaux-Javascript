@@ -84,3 +84,27 @@ document.addEventListener ( 'mousemove', (event) => {
     mouse.style.top = y + "px";
 
 })
+
+
+//test flash for fun
+
+function flashElement(flash, duration = 500, times = 3) {
+  const element = document.getElementById("flash");
+  if (!element) {
+    console.error(`Élément avec l'ID "${flash}" introuvable.`);
+    return;
+  }
+
+  let count = 0;
+  const interval = setInterval(() => {
+    element.style.opacity = element.style.opacity === "0" ? "1" : "0";
+    count++;
+
+    if (count >= times * 10){
+      clearInterval(interval);
+      element.style.opacity = "1"; 
+    }
+  }, duration / (times * 2));
+}
+
+flashElement()
