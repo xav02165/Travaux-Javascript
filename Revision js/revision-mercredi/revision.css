@@ -1,0 +1,274 @@
+.plateau {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 1em;
+    margin-bottom: 20px;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.boule {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    background-color: aqua;
+    border-radius: 50%;
+}
+h1 {
+    text-align: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bolder;
+    padding-top: 20px;
+    color:black;
+}
+.center, li {
+    text-align: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bolder;
+    padding-top: 20px;
+    color:black;
+}
+.case0{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.case1{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.case2{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.case3{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.case4{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.case5{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.case6{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.case7{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.case8{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.case9{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.case10{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.case11{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.case12{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.case13{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.case14{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.case15{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+    
