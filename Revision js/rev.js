@@ -208,3 +208,58 @@ function combienDeJourDansLeMois(a) {
 let nombreDeJour = combienDeJourDansLeMois(2);
 console.log(nombreDeJour); */
 
+
+//addition de nombres pairs du tableau: 
+/*function sumOfEvens(start, end) {
+  let sum = 0;
+  for (let i = start; i <= end; i++) {
+    if (i % 2 === 0) {
+      sum += i;
+    }
+  }
+  return sum;
+}
+console.log(sumOfEvens(1, 15)); */
+
+//fusion de 2 tableaux
+/*const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+
+function fusionTableau() {
+const mergedArray = arr1.concat(arr2);
+}
+
+console.log(mergedArray); */
+
+/*const h1 = document.querySelector('h1');
+const button = document.querySelector('button')
+
+button.addEventListener('click', (event) => {
+    h1.style.color = 'red';
+})*/
+
+//exercice 3
+/*const button = document.querySelector('button')
+const ul = document.getElementById("list");
+const li = document.createElement("li");
+
+ 
+
+ 
+
+    const text = document.createTextNode('Nouvel-Element');
+    li.appendChild(text);
+    ul.appendChild(li);
+ })*/
+
+//exercice 4:
+const button = document.querySelector('button');
+const ul = document.querySelector('ul');
+
+
+
+button.addEventListener('click', (event) => {
+    ul.firstElementChild
+    ul.removeChild(ul.firstElementChild);
+
+})
