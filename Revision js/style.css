@@ -1,4 +1,4 @@
-.mep {
+.centre {
     text-align: center;
     justify-items: center;
 
@@ -7,8 +7,15 @@ button {
     width: 200px;
     height: 40px;
 }
-p {
-    color:black;
-    height: 50px;
-    font-weight: bold;
+.b1{
+    background-color: aqua;
+}
+
+.b2{
+    background-color: antiquewhite;
+}
+
+.b3{
+    background-color: bisque;
+
 }

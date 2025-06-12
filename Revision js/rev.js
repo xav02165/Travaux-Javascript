@@ -253,7 +253,7 @@ const li = document.createElement("li");
  })*/
 
 //exercice 4:
-const button = document.querySelector('button');
+/*const button = document.querySelector('button');
 const ul = document.querySelector('ul');
 
 
@@ -262,4 +262,27 @@ button.addEventListener('click', (event) => {
     ul.firstElementChild
     ul.removeChild(ul.firstElementChild);
 
-})
+})*/
+
+//exercice 5:
+const bouton1 = document.querySelector('.b1');
+const bouton2 = document.querySelector('.b2');
+const bouton3 = document.querySelector('.b3');
+
+function quiAClické () {
+
+    bouton1.addEventListener('click', () => {
+        console.log("le bouton 1 a été clické");
+         })
+
+    bouton2.addEventListener('click', () => {
+        console.log("le bouton 2 a été clické");  
+         }) 
+
+     bouton3.addEventListener('click', () => {
+        console.log("le bouton 3 a été clické");
+         })
+}
+
+
+quiAClické()
