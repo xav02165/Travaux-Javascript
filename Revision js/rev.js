@@ -265,7 +265,7 @@ button.addEventListener('click', (event) => {
 })*/
 
 //exercice 5:
-const bouton1 = document.querySelector('.b1');
+/*const bouton1 = document.querySelector('.b1');
 const bouton2 = document.querySelector('.b2');
 const bouton3 = document.querySelector('.b3');
 
@@ -285,4 +285,32 @@ function quiAClické () {
 }
 
 
-quiAClické()
+quiAClické()*/
+
+//tableau: foreach
+/*const nombres = [1, 5, 12, 8, 130, 44];
+
+nombres.forEach((element) => {
+    console.log ('le nombres est ' + element);
+})
+*/
+//filter:
+/*const nombres = [1, 5, 12, 8, 130, 44];
+
+const filter = nombres.filter(function(grandNombres) {
+    return grandNombres > 10 ;
+    
+});
+console.log(filter); */
+
+//map:
+const nombres = [1, 5, 12, 8, 130, 44];
+
+const double = nombres.map(function(nombre) {
+    return nombre * 2 ;
+})
+console.log(double);
+
+
+
+
