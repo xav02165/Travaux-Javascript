@@ -52,63 +52,56 @@ verification();
 function verification() {
 
 if (tableauMot.includes(lettre)) {
-  console.log(`Bravo ! La lettre "${lettre}" est dans le mot.`);
-  choixLettre();
-  
-} else {
+  choixLettre ();
+
+} 
+
     if (v1 = true) {
         ens1.style.backgroundColor = "black";
         v1 = false;
-        choixLettre();
-        
-        
+        choixLettre () ;
+        return;  
     }
     if  (v2 = true) {
         ens2.style.backgroundColor = "black";
         v2 = false ;
-        choixLettre();
-        
+        return;
     }
      if  (v3 = true) {
         ens3.style.backgroundColor = "black";
         v3 = false ;
-        choixLettre();
-        
+        return;
     }
      if  (v4 = true) {
         ens4.style.backgroundColor = "black";
         v4 = false ;
-        choixLettre();
-        
+        return;
     }
      if  (v5 = true) {
         ens5.style.backgroundColor = "black";
         v5 = false ;
-        choixLettre();
-        
+        return;
     }
      if  (v6 = true) {
         ens6.style.backgroundColor = "black";
         v6 = false ;
-        choixLettre();
-        
+        return;
     }
      if  (v7 = true) {
         ens7.style.backgroundColor = "black";
         v7 = false ;
-        choixLettre();
+        return;
         
     }
      if  (v8 = true) {
         ens8.style.backgroundColor = "black";
         v8 = false ;
-        choixLettre();
-        
+        return;
     }
- if  (v9 = true) {
+    if  (v9 = true) {
         ens9.style.backgroundColor = "black";
         v9 = false ;
-        choixLettre();
+        return;
         
     }
      if  (v10 = true) {
@@ -116,10 +109,15 @@ if (tableauMot.includes(lettre)) {
         v10 = false ;
         return;
         
-    }
+    
     
 }
+choixLettre ();
+
 }
-choixLettre()
+
+
+
+
 
 
