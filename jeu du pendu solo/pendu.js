@@ -10,7 +10,7 @@ const ens9 = document.querySelector('.ens9');
 const ens10 = document.querySelector('.ens10');
 
 
-
+//Demander le mot a deviner:
 function demanderMot() {
     let motADeviner = prompt("Entrez un mot pour le jeu du pendu :");
     while (!motADeviner || motADeviner.trim() === "") {
@@ -22,3 +22,16 @@ function demanderMot() {
 
 const motPourLeJeu = demanderMot();
 
+//Transforme le motPourLeJeu en tableau pour comparaison:
+let tableauMot = motPourLeJeu.split("");
+console.log(tableauMot);
+
+//Demander une lettre:
+
+function demanderLettre () {
+let lettreAJouer = prompt ("Choississez une lettre:");
+
+}
+let lettreAJouer = demanderLettre();
+
+//Comparer la lettre au mot du tableau:
