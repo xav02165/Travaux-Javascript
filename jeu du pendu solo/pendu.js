@@ -122,8 +122,6 @@ choixLettre ();
 //Demande mot a deviner:
 let motADeviner = prompt("Entrez le mot a deviner :").toLowerCase();
 
-//Masquer le mot entré:
-console.clear();
 
 let lettresTrouvees = Array(motADeviner.length).fill("_");
 let lettresDevinees = [];
@@ -135,34 +133,38 @@ function afficherErreur() {
 }
 
 //Boucle principal:
-While(lettresTrouvees.includes("_")) && erreurs(erreursMax); 
+
+
+While = (lettresTrouvees.includes("_") && (erreurs < erreursMax));  {
+    
     const proposition = prompt("Devine une lettre:").toLowerCase();
-    if (!proposition || proposition.length !== 1 || lettresDevinees.includes(proposition)) {
+
+    /*if (!proposition || proposition.length !== 1 || lettresDevinees.includes(proposition)); {
         alert("Lettre invalide ou deja proposée!");
-    }
+        
+    }*/
 
     lettresDevinees.push(proposition);
 
-    if (motADeviner.includes(proposition))
+    if (motADeviner.includes(proposition)){
 
-    
 
-for (let i = 0; i < motADeviner.length; i++) {
+    for (let i = 0; i < motADeviner.length; i++) {
     if (motADeviner[i] === proposition);
 
-console.log("Bien joué!" + lettresTrouvees.joint(""));
-}
-else {
+console.log("Bien joué!" + lettresTrouvees.join(" "));
+}}
+    else {
     erreurs++;
     afficherErreur();
     console.log("erreur${erreurs}/$ {erreursMax}");
 }
-
+}
 
 //Fin de partie
 if (!lettresTrouvees.includes("_")) {
     alert("Felicitations, tu as deviné le mot : " + motADeviner);
 }
 else {
-    alert("Dommage! le mot etait:" + motADeviner);
+    alert("Dommage! le mot etait: " + motADeviner);
 }
