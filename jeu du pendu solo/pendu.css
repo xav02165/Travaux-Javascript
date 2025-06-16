@@ -110,3 +110,10 @@ body {
     gap: 15px;
     margin-top: 10px;
 }
+h2 {
+    text-align: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+    color:bisque;
+}
