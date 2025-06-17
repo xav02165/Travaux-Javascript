@@ -11,6 +11,8 @@ const ens9 = document.querySelector('.ens9');
 const ens10 = document.querySelector('.ens10');
 const h2 = document.querySelector('h2');
 
+
+
 // Mot à deviner
 const motADeviner = prompt("Entrez un mot pour le jeu du pendu :");
 let lettresTrouvees = Array(motADeviner.length).fill("_");
@@ -81,6 +83,8 @@ function verifierLettre(event) {
         case 0:
         ens10.style.backgroundColor = "black";
         break;
+
+        
      }
     
 
