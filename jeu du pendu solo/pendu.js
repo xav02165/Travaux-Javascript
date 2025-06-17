@@ -42,43 +42,43 @@ function verifierLettre(event) {
   }
 
     switch (essaisRestants) {
-        case "neuf":
+        case 9 :
         ens1.style.backgroundColor = "black";
         break;
-    
-        case "huit":  
+
+        case 8:  
         ens2.style.backgroundColor = "black";
         break;
     
-        case "sept":   
+        case 7:   
         ens3.style.backgroundColor = "black";
         break;
     
-        case "six":
+        case 6:
         ens4.style.backgroundColor = "black";
         break;
     
-        case "cinq":  
+        case 5:  
         ens5.style.backgroundColor = "black";
         break;
     
-        case "quatre":
+        case 4:
         ens6.style.backgroundColor = "black";
         break;
     
-        case "trois":  
+        case 3:  
         ens7.style.backgroundColor = "black";
         break;
     
-        case "deux": 
+        case 2: 
         ens8.style.backgroundColor = "black";
         break;
     
-        case "un": 
+        case 1: 
         ens9.style.backgroundColor = "black";
         break;
     
-        case "zero":
+        case 0:
         ens10.style.backgroundColor = "black";
         break;
      }
