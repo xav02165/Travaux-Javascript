@@ -39,61 +39,63 @@ function verifierLettre(event) {
     }
   } else { 
     essaisRestants--;
-    
   }
 
-
-
-
     switch (essaisRestants) {
-        case 'neuf':
+        case "neuf":
         ens1.style.backgroundColor = "black";
         break;
     
-        case 'huit':  
+        case "huit":  
         ens2.style.backgroundColor = "black";
         break;
     
-        case 'sept':   
+        case "sept":   
         ens3.style.backgroundColor = "black";
         break;
     
-        case 'six':
+        case "six":
         ens4.style.backgroundColor = "black";
         break;
     
-        case 'cinq':  
+        case "cinq":  
         ens5.style.backgroundColor = "black";
         break;
     
-        case 'quatre':
+        case "quatre":
         ens6.style.backgroundColor = "black";
         break;
     
-        case 'trois':  
+        case "trois":  
         ens7.style.backgroundColor = "black";
         break;
     
-        case 'deux': 
+        case "deux": 
         ens8.style.backgroundColor = "black";
         break;
     
-        case 'un': 
+        case "un": 
         ens9.style.backgroundColor = "black";
         break;
     
-        case 'zero':
+        case "zero":
         ens10.style.backgroundColor = "black";
         break;
      }
-        
-
+    
 
 
 
   // Affichage
   affichageMot.textContent = lettresTrouvees.join(" ");
   affichageEssais.textContent = `Essais restants : ${essaisRestants}`;
+
+
+
+
+
+
+
 
   // Vérifie les conditions de victoire ou de défaite
   if (!lettresTrouvees.includes("_")) {
