@@ -39,50 +39,50 @@ function verifierLettre(event) {
     }
   } else { 
     essaisRestants--;
-    console.log(essaisRestants);
+    
   }
 
 
 
 
     switch (essaisRestants) {
-        case '9':
+        case 'neuf':
         ens1.style.backgroundColor = "black";
         break;
     
-        case '8':  
+        case 'huit':  
         ens2.style.backgroundColor = "black";
         break;
     
-        case '7':   
+        case 'sept':   
         ens3.style.backgroundColor = "black";
         break;
     
-        case '6':
+        case 'six':
         ens4.style.backgroundColor = "black";
         break;
     
-        case '5':  
+        case 'cinq':  
         ens5.style.backgroundColor = "black";
         break;
     
-        case '4':
+        case 'quatre':
         ens6.style.backgroundColor = "black";
         break;
     
-        case '3':  
+        case 'trois':  
         ens7.style.backgroundColor = "black";
         break;
     
-        case '2': 
+        case 'deux': 
         ens8.style.backgroundColor = "black";
         break;
     
-        case '1': 
+        case 'un': 
         ens9.style.backgroundColor = "black";
         break;
     
-        case '0':
+        case 'zero':
         ens10.style.backgroundColor = "black";
         break;
      }
