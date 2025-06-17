@@ -4,6 +4,7 @@ const ens2 = document.querySelector('.ens2');
 const ens3 = document.querySelector('.ens3');
 const ens4 = document.querySelector('.ens4');
 const ens5 = document.querySelector('.ens5');
+
 const ens6 = document.querySelector('.ens6');
 const ens7 = document.querySelector('.ens7');
 const ens8 = document.querySelector('.ens8');
@@ -81,7 +82,8 @@ function verifierLettre(event) {
         break;
     
         case 0:
-        ens10.style.backgroundColor = "black";
+        ens10.style.backgroundColor = "black" ;
+        
         break;
 
         
@@ -93,12 +95,6 @@ function verifierLettre(event) {
   // Affichage
   affichageMot.textContent = lettresTrouvees.join(" ");
   affichageEssais.textContent = `Essais restants : ${essaisRestants}`;
-
-
-
-
-
-
 
 
   // Vérifie les conditions de victoire ou de défaite

@@ -59,6 +59,8 @@ body {
     font-size: 2.5rem;
     display: flex;
 }
+
+
 .ens6{
     grid-column-start: 7;
     grid-column-end: 8;
