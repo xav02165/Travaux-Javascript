@@ -106,4 +106,15 @@ function verifierLettre(event) {
 }
 
 // addeventListener
+h2.style.color= "red";
 document.addEventListener("keydown", verifierLettre);
+
+//Bouton reinitialiser
+const button = document.getElementById("Reinitialiser");
+
+button.addEventListener('click', () => {
+
+    location.reload();
+}
+    
+)
