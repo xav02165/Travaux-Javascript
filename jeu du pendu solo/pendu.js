@@ -20,7 +20,7 @@ let essaisRestants = 10;
 const affichageMot = document.getElementById("mot");
 const affichageEssais = document.getElementById("essais");
 affichageMot.textContent = lettresTrouvees.join(" ");
-affichageEssais.textContent = `Essais restants : ${essaisRestants}`;
+
 
 /**
  * @param {string} event -la lettre obtenu par addEventListener
