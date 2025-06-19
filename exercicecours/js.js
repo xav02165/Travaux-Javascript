@@ -1,26 +1,47 @@
-    
-    
-    let i = 0;
-    let x = 1;
+// // fetch('https://rickandmortyapi.com/api/character')
+// // .then((response) => response.json()) 
+// // .then(data => {
+// //     console.log(data);
+// // }) 
 
-    while (i < 50) {
-    fetch('https://rickandmortyapi.com/api/character/' + x)
+const body = document.querySelector('body');
+// let x = 1;
+
+
+
+fetch('https://rickandmortyapi.com/api/character/')
     .then((response) => response.json())
-    .then(data => {
-        const img = document.createElement('img');
-        img.src = data.image;
-        img.alt = data.name;
-        img.style.width = '300px';
-        img.style.height = '300px';
-        document.body.appendChild(img) 
-        document.body.appendChild(document.createElement('br')) 
-        document.body.appendChild(document.createTextNode(data.name));
+    .then((data) => {
+        console.log(data.info.pages);
+
+
+
+        for (let i = 1; i < data.info.pages; i++) {
+            fetch(`https://rickandmortyapi.com/api/character?page=${i}`)
+
+                .then((response) => response.json())
+                .then((data) => {
+
+                    data.results.forEach((personnage) => {
+                        console.log(personnage);
+
+                        let div = document.createElement('div');
+                        body.appendChild(div);
+
+                        let img = document.createElement('img');
+                        img.src = personnage.image;
+                        img.style.width = '300px';
+                        img.style.height = '300px';
+                        div.appendChild(img)
+
+                        let p = document.createElement('p');
+                        p.textContent = personnage.name;
+                        div.appendChild(p);
+                    });
+
+                });
+
+        }
+
     })
-    .catch(error => console.error('Error fetching data:', error));
-    x++;
-    i++;
-}
 
- 
-
-   
