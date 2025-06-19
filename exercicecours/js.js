@@ -3,7 +3,7 @@
     let i = 0;
     let x = 1;
 
-    while (i < 826 ) {
+    while (i < 50) {
     fetch('https://rickandmortyapi.com/api/character/' + x)
     .then((response) => response.json())
     .then(data => {
@@ -23,21 +23,4 @@
 
  
 
-    
-   /* fetch('https://rickandmortyapi.com/api/character/1-500 ')
-    .then((response) => response.json())
-    .then(data => {
-        data.results.forEach(element => {
-        const createDiv = document.createElement('div');
-        body.appendChild(createDiv); 
-
-        const createPara = document.createElement('p');
-        createPara.textContent = element.name;
-        createDiv.appendChild(createPara);
-
-        const creatImg = document.createElement('img');
-        creatImg.src = element.image;
-        createDiv.appendChild(creatImg);
-
-        })})
-    .catch(error => console.error('Error fetching data:', error)); */ 
+   
