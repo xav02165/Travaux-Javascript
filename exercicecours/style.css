@@ -1,39 +1,7 @@
-/*body {
+body {
     display: grid;
     flex-wrap: wrap;
     justify-content: center; 
     grid-template-columns: repeat(5, 300px);
-     ;
-    font-family: Arial, sans-serif;
-}*/
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.card p {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #333;
 }
 
