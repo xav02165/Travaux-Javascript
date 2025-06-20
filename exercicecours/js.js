@@ -57,19 +57,30 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 var popup = L.popup();
 
-function onMapClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent("You clicked the map at " + e.latlng.toString())
-        .openOn(map);
-}
 
-map.on('click', onMapClick);
-
-
-
-map.on('click', function(e){
-
-    console.log('['+e.latlng.lat+', '+e.latlng.lng+']'); 
-});
  
+//retrouver la ville grace a ses coordonnées
+
+map.addEventListener("click", (e) => {
+  lattitude = e.latlng.lat;
+  longitude = e.latlng.lng;
+
+  console.log(lattitude);
+  console.log(longitude);
+
+    fetch (`https://nominatim.openstreetmap.org/reverse?format=geocodejson&lat=${lattitude}&lon=${longitude}`)
+        .then(response => response.json())
+        .then (data => {
+            console.log(data.features[0].properties.geocoding.city)
+            nomDeLaVille = data.features[0].properties.geocoding.city ; 
+        })
+
+
+
+fetch (`https://goweather.xyz/weather/${nomDeLaVille}`)
+        .then(response => response.json())
+        .then (data => {
+            console.log(data)
+            
+        })
+});
