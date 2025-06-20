@@ -4,12 +4,12 @@
 // //     console.log(data);
 // // }) 
 
-const body = document.querySelector('body');
+//const body = document.querySelector('body');
 // let x = 1;
 
 
 
-fetch('https://rickandmortyapi.com/api/character/')
+/*fetch('https://rickandmortyapi.com/api/character/')
     .then((response) => response.json())
     .then((data) => {
         console.log(data.info.pages);
@@ -43,5 +43,33 @@ fetch('https://rickandmortyapi.com/api/character/')
 
         }
 
-    })
+    })*/
 
+
+// carte interactive avec leaflet
+var map = L.map('map').setView([48, 2], 6);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+
+var popup = L.popup();
+
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(map);
+}
+
+map.on('click', onMapClick);
+
+
+
+map.on('click', function(e){
+
+    console.log('['+e.latlng.lat+', '+e.latlng.lng+']'); 
+});
+ 
