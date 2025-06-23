@@ -60,6 +60,11 @@ var popup = L.popup();
 
  
 //retrouver la ville grace a ses coordonnées
+const affichageVille = document.getElementById("ville");
+const affichageTemperature = document.getElementById("temperature");
+affichageTemperature.textContent = "Temperature : ";
+
+
 
 map.addEventListener("click", (e) => {
   lattitude = e.latlng.lat;
@@ -73,6 +78,7 @@ map.addEventListener("click", (e) => {
         .then (data => {
             console.log(data.features[0].properties.geocoding.city)
             nomDeLaVille = data.features[0].properties.geocoding.city ; 
+            affichageVille.textContent =  "Vous etes a :" + nomDeLaVille;
         })
 
 
@@ -81,6 +87,7 @@ map.addEventListener("click", (e) => {
         .then(response => response.json())
         .then (data => {
             console.log(data.temperature)
-            
+            temperature = data.temperature;
+            affichageTemperature.textContent = "Temperature : " + temperature;
         })
 });
