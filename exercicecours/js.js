@@ -78,7 +78,7 @@ map.addEventListener("click", (e) => {
         .then (data => {
             console.log(data.features[0].properties.geocoding.city)
             nomDeLaVille = data.features[0].properties.geocoding.city ; 
-            affichageVille.textContent =  "Vous etes a :" + nomDeLaVille;
+            affichageVille.textContent =  "Vous etes a :" + nomDeLaVille; //insert le nom de la ville
         })
 
 
@@ -88,6 +88,12 @@ map.addEventListener("click", (e) => {
         .then (data => {
             console.log(data.temperature)
             temperature = data.temperature;
-            affichageTemperature.textContent = "Temperature : " + temperature;
+            affichageTemperature.textContent = "Temperature : " + temperature;  //insert la temperature
         })
 });
+
+//insert la date (code recopié)
+    const dateActuelle = new Date();
+    const dateFormatee = `${dateActuelle.getDate()}/${dateActuelle.getMonth() + 1}/${dateActuelle.getFullYear()}`;
+    document.getElementById('date').textContent = `Nous sommes le ${dateFormatee}`;
+  
