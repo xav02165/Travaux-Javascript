@@ -77,10 +77,10 @@ map.addEventListener("click", (e) => {
 
 
 
-fetch (`https://goweather.xyz/weather/${nomDeLaVille}`)
+    fetch (`https://goweather.xyz/weather/${nomDeLaVille}`)
         .then(response => response.json())
         .then (data => {
-            console.log(data)
+            console.log(data.temperature)
             
         })
 });
