@@ -16,10 +16,11 @@ Form.addEventListener('submit', (e) => {
 
     const firstName = document.getElementById('firstname');
     const lastName = document.getElementById('lastname');
+    const age = document.getElementById('age');
     console.log(firstName.value);
     console.log(lastName.value);
 
-    fetch('https://685a97779f6ef9611157086a.mockapi.io/api/v1', {
+    fetch('https://685a97779f6ef9611157086a.mockapi.io/api/v1/Formulaire', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -27,6 +28,8 @@ Form.addEventListener('submit', (e) => {
         body: JSON.stringify({
             prenom: firstName.value,
             nom: lastName.value,
+            age: age.value,
+
         })
     })
         .then((response) => {
