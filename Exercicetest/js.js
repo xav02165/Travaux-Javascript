@@ -9,7 +9,7 @@ btnSubmit.addEventListener('submit', function(event) {
     
     })*/
 
-const Form = document.getElementById('mockform');
+/*const Form = document.getElementById('mockform');
 
 Form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -38,5 +38,36 @@ Form.addEventListener('submit', (e) => {
         .then((data) => {
             alert(`Utilisateur créé avec succès : ${JSON.stringify(data)}`);
         })
+});
+
+<form id="mockform">
+    <label for="username">Nom :</label>
+    <input type ="texte" id="firstname"  placeholder="Prénom"  />
+    <input type="text" id="lastname"  placeholder="Nom de famille" />
+    <input type ="number" id="age" />
+
+    <button id="submitButton">Envoyer</button>  
+  </form> 
+
+
+
+
+
+
+
+*/
+//Form Data
+const form = document.querySelector("#fileinfo");
+
+form.addEventListener("submit", async (event) => {
+  const formData = new FormData(form);
+
+  formData.append("CustomField", "This is some extra data");
+
+  const response = await fetch("stash.php", {
+    method: "POST",
+    body: formData,
+  });
+  event.preventDefault();
 });
 
