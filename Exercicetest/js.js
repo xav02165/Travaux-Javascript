@@ -89,29 +89,50 @@ fetch('https://685a97779f6ef9611157086a.mockapi.io/api/v1/Formulaire', {
             alert(`Utilisateur créé avec succès : ${JSON.stringify(data)}`);
         })*/
 
-   // Constante      
+   // Constante    
+
+   
+
 const passwordLength = document.getElementById('password-length');
 const displayPasswordLength = document.getElementById('display-password-length');
 
-const lowerCaseCheckbox = document.getElementById('lowercase');
-const upperCaseCheckbox = document.getElementById('uppercase');
-const numberCheckbox = document.getElementById('number');
-const symbolsCheckbox = document.getElementById('symbols');
-
-const generateButton = document.getElementById('generate-button');
-
-//ecouteur au click
-generateButton.addEventListener('click', () => {
-    const length = parseInt(passwordLength.value);
-    const includeLower = lowerCaseCheckbox.checked;
-    const includeUpper = upperCaseCheckbox.checked;
-    const includeNumbers = numberCheckbox.checked;
-    const includeSymbols = symbolsCheckbox.checked;
-    displayPasswordLength.textContent = `Longueur du mot de passe : ${length}`;     
-    const password = generatePassword(length, includeLower, includeUpper, includeNumbers, includeSymbols);
-    console.log(`Mot de passe généré : ${password}`);
-    
-
+passwordLength.addEventListener('input',() =>{
+    displayPasswordLength.textContent = passwordLength.value;
 });
 
+const lowerCaseCheckbox = document.getElementById('lowercase');
+const upperCaseCheckbox = document.getElementById('uppercase');
+const numbersCheckbox = document.getElementById('numbers');
+const symbolsCheckbox = document.getElementById('symbols');
+
+const generateButton = document.getElementById('generateButton');
+
+
+ // fonction de generattion de mot de passe
+        
+function generateurDePassword() {
+    const length = parseInt(passwordLength.value);
+    const lowerCase = lowerCaseCheckbox.checked;
+    const upperCase = upperCaseCheckbox.checked;
+    const numbers = numbersCheckbox.checked;
+    const symbols = symbolsCheckbox.checked;
+
+    let characters = '';
+    if (lowerCase) characters += 'abcdefghijklmnopqrstuvwxyz';
+    if (upperCase) characters += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    if (numbers) characters += '0123456789';
+    if (symbols) characters += '!@#$%^&*()_+[]{}|;:,.<>?';
+
+   
+    let password = '';
+    for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(Math.random() * characters.length); // ?
+        password += characters[randomIndex];  // ?
+    }
     
+    console.log (`${password}`)
+    return password;
+};
+
+generateButton.addEventListener('click',generateurDePassword  ) ;
+   
