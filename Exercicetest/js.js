@@ -57,17 +57,34 @@ Form.addEventListener('submit', (e) => {
 
 */
 //Form Data
-const form = document.querySelector("#fileinfo");
+const inputPrenom = document.querySelector('.inputPrenom')
+const inputNom = document.querySelector('.inputNom')
+let form = document.querySelector('form')
 
-form.addEventListener("submit", async (event) => {
-  const formData = new FormData(form);
+form.addEventListener('submit', (e) =>{
+    e.preventDefault();
+    let data = new FormData(form)
 
-  formData.append("CustomField", "This is some extra data");
+    console.log(data.get("inputNom"));
+    console.log(data.get("inputPrenom"));
+    
+})
 
-  const response = await fetch("stash.php", {
-    method: "POST",
-    body: formData,
-  });
-  event.preventDefault();
-});
+/*fetch('https://685a97779f6ef9611157086a.mockapi.io/api/v1/Formulaire', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            prenom: inputNom.value,
+            nom: inputPrenom.value,
+            
 
+        })
+    })
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            alert(`Utilisateur créé avec succès : ${JSON.stringify(data)}`);
+        })*/
