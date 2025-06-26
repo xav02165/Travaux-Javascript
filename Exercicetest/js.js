@@ -56,7 +56,7 @@ Form.addEventListener('submit', (e) => {
 
 
 */
-//Form Data
+/*//Form Data
 const inputPrenom = document.querySelector('.inputPrenom')
 const inputNom = document.querySelector('.inputNom')
 let form = document.querySelector('form')
@@ -70,21 +70,48 @@ form.addEventListener('submit', (e) =>{
     
 })
 
-/*fetch('https://685a97779f6ef9611157086a.mockapi.io/api/v1/Formulaire', {
+fetch('https://685a97779f6ef9611157086a.mockapi.io/api/v1/Formulaire', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({
-            prenom: inputNom.value,
-            nom: inputPrenom.value,
+        body: JSON.stringify(data)
+            prenom: inputPrenom.value,
+            nom: inputNom.value,
             
 
         })
-    })
+    
         .then((response) => {
             return response.json();
         })
         .then((data) => {
             alert(`Utilisateur créé avec succès : ${JSON.stringify(data)}`);
         })*/
+
+   // Constante      
+const passwordLength = document.getElementById('password-length');
+const displayPasswordLength = document.getElementById('display-password-length');
+
+const lowerCaseCheckbox = document.getElementById('lowercase');
+const upperCaseCheckbox = document.getElementById('uppercase');
+const numberCheckbox = document.getElementById('number');
+const symbolsCheckbox = document.getElementById('symbols');
+
+const generateButton = document.getElementById('generate-button');
+
+//ecouteur au click
+generateButton.addEventListener('click', () => {
+    const length = parseInt(passwordLength.value);
+    const includeLower = lowerCaseCheckbox.checked;
+    const includeUpper = upperCaseCheckbox.checked;
+    const includeNumbers = numberCheckbox.checked;
+    const includeSymbols = symbolsCheckbox.checked;
+    displayPasswordLength.textContent = `Longueur du mot de passe : ${length}`;     
+    const password = generatePassword(length, includeLower, includeUpper, includeNumbers, includeSymbols);
+    console.log(`Mot de passe généré : ${password}`);
+    
+
+});
+
+    
