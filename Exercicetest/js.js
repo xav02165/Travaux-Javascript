@@ -95,9 +95,11 @@ fetch('https://685a97779f6ef9611157086a.mockapi.io/api/v1/Formulaire', {
 
 const passwordLength = document.getElementById('password-length');
 const displayPasswordLength = document.getElementById('display-password-length');
+displayPasswordLength.textContent = passwordLength.value;
 
-passwordLength.addEventListener('input',() =>{
-    displayPasswordLength.textContent = passwordLength.value;
+passwordLength.addEventListener('input',() => {
+    displayPasswordLength.textContent = passwordLength.value  
+    
 });
 
 const lowerCaseCheckbox = document.getElementById('lowercase');
