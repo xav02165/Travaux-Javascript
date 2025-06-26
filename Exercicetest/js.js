@@ -98,9 +98,9 @@ const displayPasswordLength = document.getElementById('display-password-length')
 displayPasswordLength.textContent = passwordLength.value;
 
 passwordLength.addEventListener('input',() => {
-    displayPasswordLength.textContent = passwordLength.value  
-    
+    displayPasswordLength.textContent = passwordLength.value 
 });
+    
 
 const lowerCaseCheckbox = document.getElementById('lowercase');
 const upperCaseCheckbox = document.getElementById('uppercase');
