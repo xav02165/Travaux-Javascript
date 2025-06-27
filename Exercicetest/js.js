@@ -90,9 +90,6 @@ fetch('https://685a97779f6ef9611157086a.mockapi.io/api/v1/Formulaire', {
         })*/
 
    // Constante    
-
-   
-
 const passwordLength = document.getElementById('password-length');
 const displayPasswordLength = document.getElementById('display-password-length');
 displayPasswordLength.value = passwordLength.value;
@@ -119,6 +116,8 @@ function generateurDePassword() {
     const numbers = numbersCheckbox.checked;
     const symbols = symbolsCheckbox.checked;
 
+    // verifie la conformité des characteres
+
     let characters = '';
     if (lowerCase) characters += 'abcdefghijklmnopqrstuvwxyz';
     if (upperCase) characters += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -127,14 +126,14 @@ function generateurDePassword() {
 
    
     let password = '';
-    for (let i = 0; i < length; i++) {
-        const randomIndex = Math.floor(Math.random() * characters.length); // ?
-        password += characters[randomIndex];  // ?
+    for (let i = 0; i < length; i++) { //boucle determiné pa rla longueur de password-length
+        const randomIndex = Math.floor(Math.random() * characters.length); // effectue le tirage au sort aleatoire
+        password += characters[randomIndex];  //effectue la concatenation des chaines de caracteres
     }
     
     console.log (`${password}`)
     return password;
 };
-
+//appel de la fonction au clicck de l'ecouteur d'evenement
 generateButton.addEventListener('click',generateurDePassword  ) ;
    
