@@ -89,6 +89,10 @@ fetch('https://685a97779f6ef9611157086a.mockapi.io/api/v1/Formulaire', {
             alert(`Utilisateur créé avec succès : ${JSON.stringify(data)}`);
         })*/
 
+
+
+
+
    // Constante    
 const passwordLength = document.getElementById('password-length');
 const displayPasswordLength = document.getElementById('display-password-length');
@@ -99,8 +103,8 @@ displayPasswordLength.value = passwordLength.value
 });
     
 
-const lowerCaseCheckbox = document.getElementById('lowercase');
-const upperCaseCheckbox = document.getElementById('uppercase');
+const lowerCaseCheckbox = document.getElementById('lowercase'); 
+const upperCaseCheckbox = document.getElementById('uppercase');  
 const numbersCheckbox = document.getElementById('numbers');
 const symbolsCheckbox = document.getElementById('symbols');
 
@@ -110,14 +114,13 @@ const generateButton = document.getElementById('generateButton');
  // fonction de generation de mot de passe
         
 function generateurDePassword() {
-    const length = parseInt(passwordLength.value);
-    const lowerCase = lowerCaseCheckbox.checked;
-    const upperCase = upperCaseCheckbox.checked;
-    const numbers = numbersCheckbox.checked;
-    const symbols = symbolsCheckbox.checked;
+    const length = parseInt(passwordLength.value);// supprime les espaces et convertit en entier
+    const lowerCase = lowerCaseCheckbox.checked; // verifie si la case est cochée
+    const upperCase = upperCaseCheckbox.checked; // verifie si la case est cochée
+    const numbers = numbersCheckbox.checked; // verifie si la case est cochée
+    const symbols = symbolsCheckbox.checked; // verifie si la case est cochée
 
-    // verifie la conformité des characteres
-
+    // verifie la conformitée des characteres
     let characters = '';
     if (lowerCase) characters += 'abcdefghijklmnopqrstuvwxyz';
     if (upperCase) characters += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -126,7 +129,7 @@ function generateurDePassword() {
 
    
     let password = '';
-    for (let i = 0; i < length; i++) { //boucle determiné pa rla longueur de password-length
+    for (let i = 0; i < length; i++) { //boucle determiné parla longueur de password-length
         const randomIndex = Math.floor(Math.random() * characters.length); // effectue le tirage au sort aleatoire
         password += characters[randomIndex];  //effectue la concatenation des chaines de caracteres
     }
