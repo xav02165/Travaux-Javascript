@@ -101,7 +101,7 @@ displayPasswordLength.value = passwordLength.value;
 passwordLength.addEventListener('input',() => {
 displayPasswordLength.value = passwordLength.value 
 });
-    
+
 
 const lowerCaseCheckbox = document.getElementById('lowercase'); 
 const upperCaseCheckbox = document.getElementById('uppercase');  
@@ -138,5 +138,5 @@ function generateurDePassword() {
     return password;
 };
 //appel de la fonction au clicck de l'ecouteur d'evenement
-generateButton.addEventListener('click',generateurDePassword  ) ;
+generateButton.addEventListener('click',generateurDePassword) ;
    
