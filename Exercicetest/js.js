@@ -110,7 +110,7 @@ const symbolsCheckbox = document.getElementById('symbols');
 const generateButton = document.getElementById('generateButton');
 
 
- // fonction de generattion de mot de passe
+ // fonction de generation de mot de passe
         
 function generateurDePassword() {
     const length = parseInt(passwordLength.value);
